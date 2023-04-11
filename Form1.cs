@@ -35,5 +35,36 @@ namespace _2_FlashyThing
                 }
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int x = 0;
+            String Poem = "";
+
+            while (x < 4)
+            {
+                Poem += "a";
+                if (x < 1)
+                {
+                    Poem += " ";
+                }
+                Poem += "n";
+                if (x > 1)
+                {
+                    Poem += Poem + " oyster";
+                    x += 2;
+                }
+                if (x == 1)
+                {
+                    Poem += "noys ";
+                }
+                if (x < 1)
+                {
+                    Poem += "oise ";
+                }
+                x++;
+            }
+            MessageBox.Show(Poem);
+        }
     }
 }
